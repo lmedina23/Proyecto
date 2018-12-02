@@ -1,0 +1,22 @@
+<div class="container">
+  <form class="form-signin" enctype="multipart/form-data">
+    <h2 class="form-signin-heading">Ingrese Producto a Vender</h2>
+    <input type="hidden" name="_id" [(ngModel)] = "producto._id"/>
+    <label for="nombre" class="sr-only">nombre</label>
+       <input name="nombre" [(ngModel)] = "producto.nombre" type="texto" id="nombre" class="form-control" placeholder="nombre" required autofocus>
+    <label for="descripcion" class="sr-only">descripcion</label>
+       <input name="descripcion" [(ngModel)] = "producto.descripcion" type="text" id="descripcion" class="form-control" placeholder="descripcion" required>
+    <label for="precio" class="sr-only">precio</label>
+       <input name="precio" [(ngModel)] = "producto.precio" type="text" id="number" class="form-control" placeholder="precio" required>
+    <label for="categoria" class="sr-only">Categoria</label>
+       <input name="categoria" [(ngModel)] = "producto.categoria" type="text" id="categoria" class="form-control" placeholder="Categoria" required>
+    <label for="detalles" class="sr-only">detalles</label>
+       <input name="detalles" [(ngModel)] = "producto.detalles" type="text" id="detalles" class="form-control" placeholder="detalles" required>
+    <label for="imagen" class="sr-only">imagen</label>
+       <input name="imagen" [(ngModel)] = "producto.imagen" type="file" id="imagen" class="form-control" placeholder="imagen" required>
+   <label for="vendedor" class="sr-only">vendedor</label>
+       <input name="vendedor" [(ngModel)] = "producto.vendedor" type="text" id="vendedor" class="form-control" placeholder="vendedor" required>
+
+       <button class="btn btn-lg btn-primary btn-block" (click)="guardarproducto();" type="button">Sign in</button>
+  </form>
+</div>
